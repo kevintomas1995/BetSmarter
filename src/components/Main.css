@@ -2,10 +2,14 @@
   flex-shrink: 0;
 }
 
+a {
+  font-family: "DM Sans";
+}
+
 .main__wrapper {
   /* background-image: url(../images/background.jpg); */
-  min-height: 100vh;
-  max-height: 100vh;
+  min-height: 87vh;
+  max-height: 87vh;
   background-image: url("../images/soccer2.jpg");
   /* Center and scale the image nicely */
   background-position: center;
@@ -13,15 +17,12 @@
   background-size: cover;
 }
 
-.main__home_wrapper {
-  margin-top: 5%;
-}
-
 .main__fadeIn {
   /* min-height: 75vh;
   max-height: 80vh;
   height: auto !important;
   height: 600px; */
+  min-height: inherit;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -32,11 +33,12 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 4%;
 }
 
 .main__descritption a {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "DM Sans";
   line-height: 150%;
   text-align: center;
 }
@@ -57,6 +59,7 @@
 .main__actions {
   display: flex;
   justify-content: center;
+  font-family: "DM Sans";
 }
 
 .main__actions > button {
@@ -85,40 +88,187 @@
   margin-right: 5%;
 }
 
-.main__actions > button > a {
-  font-family: Arial, Helvetica, sans-serif;
-}
 
 .main_helper {
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: 85vh;
   justify-content: flex-end;
 }
 
-.main__helper__helper {
-  
+.section {
+  min-height: 88vh;
 
 }
 
-.section {
-  min-height: 100vh;
+.section2 {
+  min-height: 88vh;
+  max-height: 88vh;
+  background-image: url("../images/soccer5.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section__header {
   display: flex;
   justify-content: center;
+  margin-top: 2%;
 }
 
 .section__header > a {
+  line-height: 150%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 250%;
 }
 
-@media screen and (max-width: 960px) {
+
+.date__text {
+  display: flex;
+  justify-content: center;
+  font-size: 100%;
+}
+
+.section_items {
+  margin: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+}
+
+.match_item {
+  min-height: 22vh;
+  width: 35vh;
+  background-color: white;
+  margin: 2%;
+  /* border-style: solid;
+  border-color: black; */
+  border-radius: 10px;
+  background-image: url("../images/soccer4.jpg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.match_item__upper {
+  height: 80%;
+  /* background-color: grey; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 3%;
+  margin-left: 3%; */
+  padding: 2%;
+  /* border-bottom: 1px solid black; */
+}
+
+
+
+/* .match_item__upper__logo > img {
+  width: 20%;
+  height: 20%;
+  flex: 0.9;
+} */
+
+.match_item__upper_teams {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.match_item_upper_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.match_item_upper_logo > img {
+  width: 50%;
+  height: 50%;
+ 
+}
+
+.match_item__upper_rightSide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.match_item__upper_rightSide_pinnacle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+
+.match_item__upper_rightSide_pinnacle > img {
+  height: 45%;
+  width: 45%;
+  border-radius: 50px;
+}
+
+.match_item__upper_rightSide_pinnacle > a {
+  margin-left: 3%;
+}
+
+.match_item__upper_rightSide_action > button {
+  border-radius: 3px;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* margin: 4px 2px; */
+  cursor: pointer;
+}
+
+.match_item__upper_rightSide_action > button:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.match_item_lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.match_item__lower_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 10%;
+  height: 3vh;
+  border-radius: 100px;
+}
+
+.match_item__lower_details:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 740px) {
   .main__descritption-text {
     width: 60%;
     display: flex;
     justify-content: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
 
   .main__descritption-text__title {
@@ -126,23 +276,81 @@
     font-size: 160%;
   }
 
-  .main__descritption-text__title {
-    font-weight: bold;
-    font-size: 160%;
-    /* text-shadow: 1px 1px black; */
-  }
+
 
   .main__actions > button {
     width: 40%;
   }
 
   .main__fadeIn {
-    min-height: 75vh;
+    /* min-height: 75vh;
     max-height: 80vh;
     height: auto !important;
-    height: 600px;
+    height: 600px; */
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+
+  .section__header {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 90%;
+  }
+
+  .date__text {
+    display: flex;
+  justify-content: center;
+  font-size: 100%;
+  }
+}
+
+
+@media screen and (min-width: 1050px) {
+  .main__fadeIn {
+    /* min-height: 75vh;
+    max-height: 80vh;
+    height: auto !important;
+    height: 600px; */
+    max-height: 80vh;;
+    /* min-height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .main__descritption-text {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+}
+
+
+@media screen and (min-width: 1600px) {
+  .main__fadeIn {
+    /* min-height: 75vh;
+    max-height: 80vh;
+    height: auto !important;
+    height: 600px; */
+    max-height: 80vh;;
+    /* min-height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .main__descritption-text {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0%;
+  }
+
+  .main__actions {
+    margin-top: 2%;
   }
 }

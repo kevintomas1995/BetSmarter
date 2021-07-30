@@ -1,4 +1,5 @@
 import "./App.css";
+import "@fontsource/dm-sans";
 
 import Main from "./components/Main";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";

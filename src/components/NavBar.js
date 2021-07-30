@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
+import "@fontsource/dm-sans";
 
-
-function NavBar() {
+function NavBar(props) {
   const [clicked, setClicked] = useState(false);
   const [navbar, setNavbar] = useState("navbar");
+
   const clickHandler = () => {
     setClicked((prevState) => !prevState);
   };
@@ -13,22 +14,38 @@ function NavBar() {
     setClicked(false);
   };
 
+  function handleHomeClick() {
+    props.homeRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+
+  function handleQuotenClick() {
+    props.quotenRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+
+  function handleWhyClick() {
+    props.whyRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <div className="navbar__wrapper">
       <nav className={navbar}>
-        <div>
+        <div onClick={handleHomeClick}>
           <Link to="/" className="navbar__logo">
             {/* <img src={logo} alt="Logo" /> */}
             <a className="navbar__name">BetSmart</a>
+            {/* <i class="fab fa-btc"></i> */}
           </Link>
         </div>
 
         <div>
-          <div className="navbar__menu-icon" onClick={clickHandler}>
-            <i  className={clicked ? "fas fa-times" : "fas fa-bars"} />
+          <div className="navbar__menu-icon__wrapper">
+            <div className="navbar__menu-icon" onClick={clickHandler}>
+              <i className={clicked ? "fas fa-times" : "fas fa-bars"} />
+            </div>
           </div>
+
           <ul className={clicked ? "nav-menu active" : "nav-menu"}>
-            <li className="navbar__item">
+            <li className="navbar__item" onClick={handleHomeClick}>
               <Link
                 to="/"
                 className="navbar__nav-links"
@@ -37,7 +54,7 @@ function NavBar() {
                 <a className="navbar_item__text">Home</a>
               </Link>
             </li>
-            <li className="navbar__item">
+            <li className="navbar__item" onClick={handleQuotenClick}>
               <Link
                 to="/quoten"
                 className="navbar__nav-links"
@@ -46,7 +63,7 @@ function NavBar() {
                 <a className="navbar_item__text">Beste Quoten</a>
               </Link>
             </li>
-            <li className="navbar__item">
+            <li className="navbar__item" onClick={handleWhyClick}>
               <Link
                 to="/warumBetSmart"
                 className="navbar__nav-links"

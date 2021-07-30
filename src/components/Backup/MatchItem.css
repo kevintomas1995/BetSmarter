@@ -1,0 +1,112 @@
+.match_item {
+  min-height: 30vh;
+  min-width: 90%;
+  max-width: 90%;
+  /* background-color: rgb(228, 228, 228) ; */
+  margin: 2%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+  box-shadow: 4px 4px black;
+  transition-duration: 0.5s;
+  font-family: "DM Sans";
+}
+
+.match__item__padding {
+    min-height: 30vh;
+    min-width: 90%;
+    max-width: 90%;
+    /* background-color: rgb(228, 228, 228) ; */
+    margin: 2%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 4px 4px black;
+    padding-bottom: 15%;  
+}
+
+.match_item:hover {
+  background-color: rgb(245, 245, 245) ;
+  margin: 2%;
+  border-radius: 10px;
+  cursor: pointer;
+  /* box-shadow: 5px 5px #888888; */
+}
+
+.match__item__upper {
+  min-height: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3%;
+  margin-right: 3%;
+  border-bottom: 1px solid black;
+}
+
+.match__item__upper__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.match__item__upper__match {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.match__item__upper__match > a {
+  font-weight: bold;
+}
+
+.match__item_upper_action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: rgb(238, 238, 13);
+  min-height: 8vh;
+  border-radius: 3px;
+}
+
+.match__item_upper_action:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.match__item__lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 80%;
+}
+
+.match__item__lower__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 10px;
+}
+
+
+.match__item__lower__row__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 350px) {
+  .match__item__upper__match {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+  }
+}
