@@ -1,0 +1,93 @@
+.match_item {
+    min-height: 22vh;
+    width: 35vh;
+    background-color: white;
+    margin: 2%;
+    border-radius: 10px;
+    background-image: url("../images/soccer4.jpg");
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%,rgba(0,0,0,0.1) 100%), url("../images/soccer4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
+  .match_item__upper {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2%;
+    
+  }
+  
+  .match_item__upper__leagueRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .match_item__upper__leagueRow__logo  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .match_item__upper__leagueRow__logo > img {
+    width: 13%;
+    height: 30%;
+  }
+  
+  .match_item__upper__teams {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .match_item__lower {
+    height: 35%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    border-top: 1px dotted white;
+  }
+  
+  .match_item__lower_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 10%;
+    height: 3vh;
+    border-radius: 100px;
+    margin-left: 3%;
+  }
+  
+  .match_item__lower__pinnacle > img {
+    height: 32%;
+    width: 14%;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .match_item__lower_action > button {
+    border-radius: 3px;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  
+  .match_item__lower_action > button:hover {
+  font-weight: bold;
+  }

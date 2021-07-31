@@ -7,11 +7,9 @@ a {
 }
 
 .main__wrapper {
-  /* background-image: url(../images/background.jpg); */
   min-height: 87vh;
   max-height: 87vh;
   background-image: url("../images/soccer2.jpg");
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -51,8 +49,9 @@ a {
 }
 
 .main__descritption-text__title {
-  font-weight: bold;
+  font-weight: 1000;
   font-size: 250%;
+  /* text-shadow: 4px 3px 0 #868686; */
   /* text-shadow: 1px 1px black; */
 }
 
@@ -104,6 +103,16 @@ a {
 .section2 {
   min-height: 88vh;
   max-height: 88vh;
+  background-image: url("../images/white.png");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section3 {
+  min-height: 88vh;
+  max-height: 88vh;
   background-image: url("../images/soccer5.jpg");
   /* Center and scale the image nicely */
   background-position: center;
@@ -140,127 +149,9 @@ a {
   flex-wrap: wrap;
 }
 
-.match_item {
-  min-height: 22vh;
-  width: 35vh;
-  background-color: white;
-  margin: 2%;
-  /* border-style: solid;
-  border-color: black; */
-  border-radius: 10px;
-  background-image: url("../images/soccer4.jpg");
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.match_item__upper {
-  height: 80%;
-  /* background-color: grey; */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /* margin-right: 3%;
-  margin-left: 3%; */
-  padding: 2%;
-  /* border-bottom: 1px solid black; */
-}
 
 
 
-/* .match_item__upper__logo > img {
-  width: 20%;
-  height: 20%;
-  flex: 0.9;
-} */
-
-.match_item__upper_teams {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-}
-
-.match_item_upper_logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.match_item_upper_logo > img {
-  width: 50%;
-  height: 50%;
- 
-}
-
-.match_item__upper_rightSide {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.match_item__upper_rightSide_pinnacle {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  
-}
-
-.match_item__upper_rightSide_pinnacle > img {
-  height: 45%;
-  width: 45%;
-  border-radius: 50px;
-}
-
-.match_item__upper_rightSide_pinnacle > a {
-  margin-left: 3%;
-}
-
-.match_item__upper_rightSide_action > button {
-  border-radius: 3px;
-  background-color: black;
-  border: none;
-  color: white;
-  padding: 5px 8px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  /* margin: 4px 2px; */
-  cursor: pointer;
-}
-
-.match_item__upper_rightSide_action > button:hover {
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.match_item_lower {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.match_item__lower_details {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  width: 10%;
-  height: 3vh;
-  border-radius: 100px;
-}
-
-.match_item__lower_details:hover {
-  background-color: yellow;
-  cursor: pointer;
-}
 
 
 @media screen and (max-width: 740px) {

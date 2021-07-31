@@ -26,6 +26,11 @@ function NavBar(props) {
     props.whyRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
+
+  function handleTutClick() {
+    props.tutRef.current.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <div className="navbar__wrapper">
       <nav className={navbar}>
@@ -72,7 +77,7 @@ function NavBar(props) {
                 <a className="navbar_item__text">Warum BetSmart?</a>
               </Link>
             </li>
-            <li className="navbar__item">
+            <li className="navbar__item" onClick={handleTutClick}>
               <Link
                 to="/anleitungen"
                 className="navbar__nav-links"
