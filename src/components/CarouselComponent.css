@@ -1,0 +1,11 @@
+.carousel_component {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vh;
+}
+
+.carousel_component > i {
+    font-size: 350%;
+    cursor: pointer;
+}

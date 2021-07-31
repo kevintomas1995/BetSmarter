@@ -2,10 +2,11 @@ import React, { useRef, useState } from "react";
 import NavBar from "./NavBar";
 import "./Main.css";
 import FadeIn from "react-fade-in";
-import { useInView } from "react-intersection-observer";
+
 import MatchItem from "./MatchItem";
 import HomeDescription from "./HomeDescription";
 import "@fontsource/dm-sans";
+import CarouselComponent from "./CarouselComponent";
 
 function Main() {
   const homeRef = useRef();
@@ -25,6 +26,14 @@ function Main() {
     day: "numeric",
   };
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <div className="main" ref={homeRef}>
       <NavBar
@@ -42,11 +51,10 @@ function Main() {
               </a>
             </div>
           </div>
-
+          <HomeDescription text="PINNACLE AUS DEUTSCHLAND NUTZEN" />
           <HomeDescription text="BESTE QUOTEN" />
           <HomeDescription text="KEINE WETTSTEUER" />
           <HomeDescription text="KEINE LIMITIERUNG" />
-          <HomeDescription text="100% FREIHEIT" />
 
           <div className="main__actions">
             <button
@@ -90,6 +98,10 @@ function Main() {
             >
               Warum BetSmart?
             </a>
+          </div>
+
+          <div className="section_items">
+            <CarouselComponent />
           </div>
         </div>
       </div>

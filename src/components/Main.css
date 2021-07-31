@@ -120,6 +120,7 @@ a {
   background-size: cover;
 }
 
+
 .section__header {
   display: flex;
   justify-content: center;
@@ -141,7 +142,7 @@ a {
 }
 
 .section_items {
-  margin: 5%;
+  margin: 2%;
   display: flex;
   flex-direction: row;
   justify-content: center;
