@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import "./MatchItem.css";
 import pinnacle from "../images/pinnacle.jpeg";
 import logo from "../images/zweite_buli.jpg";
+import ModalComponent from "./ModalComponent";
 
 function MatchItem() {
   const [showDetails, setShowDetails] = useState(false);
 
   return (
+    // <Modal>
+    <>
     <div className="match_item">
     <div className="match_item__upper">
       <div className="match_item__upper__leagueRow">
@@ -48,6 +51,9 @@ function MatchItem() {
         </div>
     </div>
   </div>
+  {/* </Modal> */}
+  <ModalComponent />
+  </>
   );
 }
 

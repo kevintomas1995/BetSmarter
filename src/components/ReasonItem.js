@@ -53,7 +53,7 @@ function ReasonItem(props) {
                 alignItems: "flex-end",
               }}
             >
-              <button>Wetten</button>
+              <button>Registrieren</button>
             </div>
           </div>
         </div>
@@ -95,7 +95,7 @@ function ReasonItem(props) {
                 alignItems: "flex-end",
               }}
             >
-              <button>Wetten</button>
+              <button>Registrieren</button>
             </div>
           </div>
         </div>
@@ -130,7 +130,7 @@ function ReasonItem(props) {
                 alignItems: "flex-end",
               }}
             >
-              <button>Wetten</button>
+              <button>Registrieren</button>
             </div>
           </div>
         </div>
@@ -164,7 +164,7 @@ function ReasonItem(props) {
                 alignItems: "flex-end",
               }}
             >
-              <button>Wetten</button>
+              <button>Registrieren</button>
             </div>
           </div>
         </div>
@@ -208,7 +208,7 @@ function ReasonItem(props) {
                 alignItems: "flex-end",
               }}
             >
-              <button>Wetten</button>
+              <button>Registrieren</button>
             </div>
           </div>
         </div>
@@ -249,7 +249,7 @@ function ReasonItem(props) {
                 alignItems: "flex-end",
               }}
             >
-              <button>Wetten</button>
+              <button>Registrieren</button>
             </div>
           </div>
         </div>
