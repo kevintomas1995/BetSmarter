@@ -3,7 +3,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
 }
+
+
 
 .close_button {
     width: 100%;
@@ -21,6 +24,10 @@
     margin-bottom: 3%;
 }
 
+.close_button_element {
+  cursor: pointer;
+}
+
 .menu-trigger {
     background: #ffffff;
     border-radius: 90px;
@@ -29,11 +36,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 4px 6px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     border: none;
     vertical-align: middle;
     transition: box-shadow 0.4s ease;
-   
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   }
   
   .menu-trigger:hover {
@@ -52,6 +58,54 @@
     text-align: center;
   }
 
-  .odds_header  {
-      
-  }
+ 
+
+
+.menu {
+  background: black;
+  border-radius: 8px;
+  position: absolute;
+  top: 20%;
+  /* right: 0; */
+  width: 50%;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  /* transform: translateY(-20px); */
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  left: 50%;
+  transform: translateX(-96%);
+}
+
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  /* transform: translateY(0); */
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  left: 50%;
+  
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #dddddd;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  cursor: pointer;
+}
+
+.menu li a:hover {
+  color: black;
+  background-color: white;
+}

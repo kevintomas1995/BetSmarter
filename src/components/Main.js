@@ -64,7 +64,7 @@ function Main() {
               <a>LOS GEHT'S!</a>
             </button>
             <button className="main__actions__button2" ref={quotenRef}>
-              <a>WAS IST BETSMART?</a>
+              <a>WARUM BETSMART?</a>
             </button>
           </div>
         </FadeIn>

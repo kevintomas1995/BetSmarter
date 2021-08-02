@@ -26,7 +26,6 @@ function NavBar(props) {
     props.whyRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
-
   function handleTutClick() {
     props.tutRef.current.scrollIntoView({ behavior: "smooth" });
   }
@@ -50,15 +49,6 @@ function NavBar(props) {
           </div>
 
           <ul className={clicked ? "nav-menu active" : "nav-menu"}>
-            <li className="navbar__item" onClick={handleHomeClick}>
-              <Link
-                to="/"
-                className="navbar__nav-links"
-                onClick={closeMobileMenu}
-              >
-                <a className="navbar_item__text">Home</a>
-              </Link>
-            </li>
             <li className="navbar__item" onClick={handleQuotenClick}>
               <Link
                 to="/quoten"
@@ -86,6 +76,16 @@ function NavBar(props) {
                 <a className="navbar_item__text">Anleitungen</a>
               </Link>
             </li>
+            <li className="navbar__item" onClick={handleHomeClick}>
+              <Link
+                to="/"
+                className="navbar__nav-links"
+                onClick={closeMobileMenu}
+              >
+                <a className="navbar_item__text">FAQ</a>
+              </Link>
+            </li>
+          
           </ul>
         </div>
       </nav>

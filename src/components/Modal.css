@@ -5,8 +5,9 @@
     width: 100%;
     height: 100vh;
     z-index: 20;
-    background-color: rgba(72, 72, 72, 0.75);
-    opacity: 0.2;
+    background-color: rgba(16, 16, 16, 0.75);
+    opacity: 1.2;
+    
   }
   
   
@@ -23,7 +24,8 @@
     border-radius: 14px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     z-index: 30;
-    animation: slide-down 300ms ease-out forwards; 
+    animation: slide-down 1200ms ease-out forwards; 
+    
   }
 /* 
   @media (min-width: 768px) {
