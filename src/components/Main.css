@@ -103,7 +103,7 @@ a {
 .section2 {
   min-height: 88vh;
   max-height: 88vh;
-  background-image: url("../images/white.png");
+  background-image: url("../images/soccer5.jpg");
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -152,7 +152,96 @@ a {
 
 
 
+.odds_market {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-bottom: 3%;
+}
 
+.menu-trigger {
+  background: #ffffff;
+  border-radius: 90px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 6px;
+  border: none;
+  vertical-align: middle;
+  transition: box-shadow 0.4s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.menu-trigger:hover {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-trigger span {
+  font-weight: 700;
+  vertical-align: middle;
+  font-size: 130%;
+  margin: 0 10px;
+}
+
+.market_name {
+  /* margin-right: 15%; */
+  text-align: center;
+}
+
+
+.menu {
+  background: black;
+  border-radius: 8px;
+  position: relative;
+  top: 80%;
+  /* right: 0; */
+  width: 50%;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+  /* transform: translateY(-20px); */
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  left: 50%;
+  transform: translateX(-96%);
+}
+
+
+.menu.active {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  /* transform: translateY(0); */
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  left: 50%;
+  
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #dddddd;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  cursor: pointer;
+}
+
+.menu li a:hover {
+  color: black;
+  background-color: white;
+}
 
 
 @media screen and (max-width: 740px) {

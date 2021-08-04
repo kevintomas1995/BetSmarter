@@ -49,7 +49,7 @@ function NavBar(props) {
           </div>
 
           <ul className={clicked ? "nav-menu active" : "nav-menu"}>
-            <li className="navbar__item" onClick={handleQuotenClick}>
+            {/* <li className="navbar__item" onClick={handleQuotenClick}>
               <Link
                 to="/quoten"
                 className="navbar__nav-links"
@@ -57,14 +57,14 @@ function NavBar(props) {
               >
                 <a className="navbar_item__text">Beste Quoten</a>
               </Link>
-            </li>
+            </li> */}
             <li className="navbar__item" onClick={handleWhyClick}>
               <Link
                 to="/warumBetSmart"
                 className="navbar__nav-links"
                 onClick={closeMobileMenu}
               >
-                <a className="navbar_item__text">Warum BetSmart?</a>
+                <a className="navbar_item__text">Statistiken</a>
               </Link>
             </li>
             <li className="navbar__item" onClick={handleTutClick}>
@@ -73,16 +73,36 @@ function NavBar(props) {
                 className="navbar__nav-links"
                 onClick={closeMobileMenu}
               >
-                <a className="navbar_item__text">Anleitungen</a>
+                <a className="navbar_item__text">Warum BetSmart?</a>
               </Link>
             </li>
-            <li className="navbar__item" onClick={handleHomeClick}>
+            <li className="navbar__item" >
               <Link
                 to="/"
                 className="navbar__nav-links"
                 onClick={closeMobileMenu}
               >
-                <a className="navbar_item__text">FAQ</a>
+                <a className="navbar_item__text">Anleitungen</a>
+              </Link>
+            </li>
+
+            <li className="navbar__item" >
+              <Link
+                to="/"
+                className="navbar__nav-links"
+                onClick={closeMobileMenu}
+              >
+                <a className="navbar_item__text">Kontakt</a>
+              </Link>
+            </li>
+
+            <li className="navbar__item" >
+              <Link
+                to="/"
+                className="navbar__nav-links"
+                onClick={closeMobileMenu}
+              >
+                <a className="navbar_item__text">Instagram</a>
               </Link>
             </li>
           

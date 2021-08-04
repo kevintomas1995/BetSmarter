@@ -24,7 +24,7 @@ import ac from "../images/asianconnect.png";
 
 function ReasonItem(props) {
   return (
-    <>
+    <div className="wrapper">
       {props.number === 1 && (
         <div className="reason_item">
           <div className="reason_item_header">
@@ -36,12 +36,12 @@ function ReasonItem(props) {
             herauszusuchen?
             <br></br>
             <br></br> <FcSearch size={30} />
-            <br></br>
+            {/* <br></br> */}
             <br></br>
             Dann wende dich von den Mainstream-Buchmachern wie Bet365 und Co. ab
             und spare dir <b>Zeit</b> und <b>Geld</b>!<br></br>
             <br></br> <FcAlarmClock size={30} /> <GiMoneyStack size={30} />
-            <br></br>
+            {/* <br></br> */}
             <br></br>
             Wie? Ganz einfach! Nutze <b>Pinnacle Sports</b> und profitiere von
             den besten Quoten auf dem Wettmarkt!
@@ -254,7 +254,7 @@ function ReasonItem(props) {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 }
 

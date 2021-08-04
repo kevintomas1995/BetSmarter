@@ -1,0 +1,15 @@
+.tutorial_img {
+    display: block;
+     margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 30%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+  }
+  
+  @media screen and (max-width: 740px) {
+    .tutorial_img {
+      height: 10%;
+    }
+  }

@@ -38,9 +38,9 @@ function MatchItem() {
           </div>
 
           <div className="match_item__upper__teams">
-            <p style={{ color: "white", textAlign: "center" }}>Hamburger SV</p>
-            <p style={{ color: "white" , textAlign: "center"}}>-</p>
-            <p style={{ color: "white" , textAlign: "center"}}>Werder Bremen</p>
+            <p style={{ color: "white", textAlign: "center", width: "45%" }}>Hamburger SV</p>
+            <p style={{ color: "white" , textAlign: "center", width: "10%"}}>-</p>
+            <p style={{ color: "white" , textAlign: "center", width: "45%"}}>Werder Bremen</p>
           </div>
         </div>
 
@@ -51,6 +51,7 @@ function MatchItem() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              minWidth: "33.3%",
             }}
           >
             <button onClick={showModalHandler}>Details</button>
@@ -62,6 +63,7 @@ function MatchItem() {
               justifyContent: "center",
               alignItems: "center",
               flexDirection: "column",
+              minWidth: "33.3%",
             }}
           >
             <img src={pinnacle} />
@@ -73,6 +75,7 @@ function MatchItem() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              minWidth: "33.3%",
             }}
           >
             <button>Wetten</button>

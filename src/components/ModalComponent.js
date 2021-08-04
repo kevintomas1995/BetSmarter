@@ -8,7 +8,7 @@ import { useDetectOutsideClick } from "./useDetectOutsideClick";
 
 // FÜR DROPDOWN https://codesandbox.io/s/dropdown-menu-jzldk
 
-function ModalComponent(props) {
+function ModalStats(props) {
   const dropdownRef = useRef(null);
   const [isActive, setIsActive] = useDetectOutsideClick(dropdownRef, false);
   const onClick = () => setIsActive(!isActive);
@@ -49,4 +49,4 @@ function ModalComponent(props) {
   );
 }
 
-export default ModalComponent;
+export default ModalStats;
