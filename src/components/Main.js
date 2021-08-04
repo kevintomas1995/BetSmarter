@@ -1,22 +1,18 @@
 import React, { useRef, useState } from "react";
 import NavBar from "./NavBar";
 import "./Main.css";
-import FadeIn from "react-fade-in";
-import HomeDescription from "./HomeDescription";
 import "@fontsource/dm-sans";
-import CarouselComponent from "./CarouselComponent";
-import Anleitungen from "./Anleitungen";
-import Diagrams from "./Diagrams";
-import ModalStats from "./ModalStats";
-import { FcFilledFilter, FcEmptyFilter } from "react-icons/fc";
+import Home from "./Home";
+import StatsSite from "./StatsSite";
+import WhySite from "./WhySite";
+import TutSite from "./TutSite";
 
 function Main() {
   const homeRef = useRef();
   const quotenRef = useRef();
   const whyRef = useRef();
   const tutRef = useRef();
-  const dropdownRef = useRef(null);
-  const [isActive, setIsActive] = useState(dropdownRef, false);
+  const [isActive, setIsActive] = useState(false);
 
   const onClick = () => setIsActive(!isActive);
 
@@ -56,37 +52,12 @@ function Main() {
         whyRef={whyRef}
         tutRef={tutRef}
       />
-      <div className="main__wrapper">
-        <FadeIn delay={400} transitionDuration={800} className="main__fadeIn">
-          <div className="main__descritption">
-            <div className="main__descritption-text">
-              <a className="main__descritption-text__title">
-                WILKOMMEN ZU BETSMART
-              </a>
-            </div>
-          </div>
-          <HomeDescription text="PINNACLE AUS DEUTSCHLAND NUTZEN" />
-          <HomeDescription text="BESTE QUOTEN" />
-          <HomeDescription text="KEINE WETTSTEUER" />
-          <HomeDescription text="KEINE LIMITIERUNG" />
 
-          <div className="main__actions">
-            <button
-              className="main__actions__button1"
-              onClick={handleQuotenClick}
-            >
-              <a>REGISTRIEREN</a>
-            </button>
-            <button
-              className="main__actions__button2"
-              onClick={handleWhyClick}
-              ref={quotenRef}
-            >
-              <a>WARUM BETSMART?</a>
-            </button>
-          </div>
-        </FadeIn>
-      </div>
+      <Home
+        handleQuotenClick={handleQuotenClick}
+        handleWhyClick={handleWhyClick}
+        quotenRef={quotenRef}
+      />
 
       {/* <div className="section">
         <div classname="section__wrapper">
@@ -99,80 +70,20 @@ function Main() {
             {date.toLocaleDateString("de-DE", dateOptions)}
           </a>
           <div className="section_items">
-            <MatchItem />
-            <MatchItem />
-            <MatchItem />
-            <MatchItem />
-            <MatchItem />
-            <MatchItem />
-            <MatchItem />
-            <MatchItem />
-            
+            <MatchItem />            
           </div>
         </div>
       </div> */}
 
-      <div className="section">
-        <div classname="section__wrapper">
-          <div className="section__header">
-            <a className="section__header__text" style={{ paddingTop: "3%" }}>
-              Statistiken
-            </a>
-          </div>
+      <StatsSite
+        onClick={onClick}
+        isActive={isActive}
+        hideModalHandler={hideModalHandler}
+      />
 
-          <div className="section_items">
-            <div className="odds_market">
-              <button className="menu-trigger" onClick={onClick}>
-                <span>Märkte</span>
-                {isActive ? (
-                  <FcFilledFilter size={20} />
-                ) : (
-                  <FcEmptyFilter size={20} />
-                )}
-              </button>
+      <WhySite whyRef={whyRef} />
 
-              <span className="market_name">Over/Under 2,5</span>
-            </div>
-            
-            { isActive && <ModalStats onClick={hideModalHandler}/> }
-            <Diagrams />
-          </div>
-        </div>
-      </div>
-
-      <div className="section2" ref={whyRef}>
-        <div classname="section__wrapper">
-          <div className="section__header">
-            <a
-              className="section__header__text"
-              style={{ color: "white", paddingTop: "1%" }}
-            >
-              Warum BetSmart?
-            </a>
-          </div>
-
-          <div className="section_items">
-            <CarouselComponent />
-          </div>
-        </div>
-      </div>
-
-      <div className="section">
-        <a ref={tutRef} style={{ color: "white" }}>
-          Pinnacle Sports, AsianConnect
-        </a>
-        <div classname="section__wrapper">
-          <div className="section__header">
-            <a className="section__header__text" style={{ paddingTop: "3%" }}>
-              Anleitungen
-            </a>
-          </div>
-
-          <div className="section_items">
-            <Anleitungen />
-          </div>
-        </div>
-      </div>
+      <TutSite tutRef={tutRef} />
     </div>
   );
 }

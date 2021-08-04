@@ -20,13 +20,25 @@ function ModalComponent(props) {
           >
             <ul>
               <li>
-                <a>Messages</a>
+                <a onClick={props.onClick}>Heim gewinnt</a>
               </li>
               <li>
-                <a>Trips</a>
+                <a onClick={props.onClick}>Unentschieden</a>
               </li>
               <li>
-                <a>Saved</a>
+                <a onClick={props.onClick}>Auswärts gewinnt</a>
+              </li>
+              <li>
+                <a onClick={props.onClick}>Über 2.5 Tore</a>
+              </li>
+              <li>
+                <a onClick={props.onClick}>Unter 2.5 Tore</a>
+              </li>
+              <li>
+                <a onClick={props.onClick}>AHH</a>
+              </li>
+              <li>
+                <a onClick={props.onClick}>AHA</a>
               </li>
             </ul>
           </nav>

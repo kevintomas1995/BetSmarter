@@ -6,98 +6,10 @@ a {
   font-family: "DM Sans";
 }
 
-.main__wrapper {
-  min-height: 87vh;
-  max-height: 87vh;
-  background-image: url("../images/soccer2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.main__fadeIn {
-  /* min-height: 75vh;
-  max-height: 80vh;
-  height: auto !important;
-  height: 600px; */
-  min-height: inherit;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-.main__descritption {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 4%;
-}
-
-.main__descritption a {
-  color: white;
-  font-family: "DM Sans";
-  line-height: 150%;
-  text-align: center;
-}
-
-.main__descritption-text {
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5%;
-}
-
-.main__descritption-text__title {
-  font-weight: 1000;
-  font-size: 250%;
-  /* text-shadow: 4px 3px 0 #868686; */
-  /* text-shadow: 1px 1px black; */
-}
-
-.main__actions {
-  display: flex;
-  justify-content: center;
-  font-family: "DM Sans";
-}
-
-.main__actions > button {
-  width: 20%;
-  background-color: transparent;
-  color: white;
-  border: 1px solid white;
-  border-radius: 3%;
-  height: 50px;
-  font-size: large;
-  transition: 0.3s;
-}
-
-.main__actions > button:hover {
-  width: 20%;
-  background-color: white;
-  color: black;
-  border: 1px solid white;
-  border-radius: 3%;
-  height: 50px;
-  font-size: large;
-  cursor: pointer;
-}
-
-.main__actions__button1 {
-  margin-right: 5%;
-}
-
-
-.main_helper {
-  display: flex;
-  flex-direction: column;
-  height: 85vh;
-  justify-content: flex-end;
-}
 
 .section {
   min-height: 88vh;
-
 }
 
 .section2 {
@@ -192,56 +104,6 @@ a {
 }
 
 
-.menu {
-  background: black;
-  border-radius: 8px;
-  position: relative;
-  top: 80%;
-  /* right: 0; */
-  width: 50%;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  visibility: hidden;
-  display: none;
-  /* transform: translateY(-20px); */
-  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
-  left: 50%;
-  transform: translateX(-96%);
-}
-
-
-.menu.active {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-  /* transform: translateY(0); */
-  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
-  left: 50%;
-  
-}
-
-.menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu li {
-  border-bottom: 1px solid #dddddd;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: white;
-  padding: 15px 20px;
-  display: block;
-  cursor: pointer;
-}
-
-.menu li a:hover {
-  color: black;
-  background-color: white;
-}
 
 
 @media screen and (max-width: 740px) {

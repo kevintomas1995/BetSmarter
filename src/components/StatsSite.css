@@ -1,0 +1,74 @@
+.section {
+  min-height: 88vh;
+}
+
+.section__header {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.section__header > a {
+  line-height: 150%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 250%;
+}
+
+.section_items {
+  margin: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+}
+
+.odds_market {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-bottom: 3%;
+}
+
+.menu-trigger {
+  background: #ffffff;
+  border-radius: 90px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 6px;
+  border: none;
+  vertical-align: middle;
+  transition: box-shadow 0.4s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.menu-trigger:hover {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-trigger span {
+  font-weight: 700;
+  vertical-align: middle;
+  font-size: 130%;
+  margin: 0 10px;
+}
+
+.market_name {
+  /* margin-right: 15%; */
+  text-align: center;
+}
+
+
+@media screen and (max-width: 740px) {
+    .section__header {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        font-size: 90%;
+      }
+}

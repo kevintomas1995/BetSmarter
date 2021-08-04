@@ -7,7 +7,7 @@ import einzahlung3 from "../images/ac_einzahlung3.png";
 
 function Anleitungen() {
   return (
-    <>
+    <div className="anleitungen_wrapper">
       <a>
         Hier erklären wir Dir, wie du dich bei unserem Partner
         <b> AsianConnect</b> anmeldest und <b>Pinnacle Sports</b> und viele
@@ -25,17 +25,20 @@ function Anleitungen() {
           }}
         >
           <br></br>
-          SCHRITT 1:
+          <p className="header">SCHRITT 1:</p>
         </a>
         <p>
+        <img src={registry} className="tutorial_img" />
           Gehe zu **LINK** und regisitriere dich mit deinen Daten. DAS BILD
           VERLINKEN. Auf der rechten Seite wirst du die Bookies sehen, bei denen
           du dich registrieren kannst. Pinnacle Sport ist unter "PS3838" zu
-          finden. Darüber hinaus können wir dir AsianOdds empfehlen, dort sind
+          finden. 
+          
+          Darüber hinaus können wir dir AsianOdds empfehlen, dort sind
           mehrere asiatische Bookies gebündelt zu finden. (Die Auswahl kannst du
           später noch änder/erweitern)
         </p>
-        <img src={registry} className="tutorial_img" />
+        
         <a
           style={{
             fontSize: "130%",
@@ -45,7 +48,7 @@ function Anleitungen() {
           }}
         >
           <br></br>
-          SCHRITT 2:
+          <p className="header">SCHRITT 2:</p>
         </a>
         <p>
           Nun wirst du in Kürze von AsianConnect eine E-Mail erhalten und dein
@@ -60,7 +63,7 @@ function Anleitungen() {
           }}
         >
           <br></br>
-          SCHRITT 3:
+          <p className="header">SCHRITT 3:</p>
         </a>
         <p>
           In ein paar Schritten hast du es geschafft! Nun logge dich ein und
@@ -87,7 +90,7 @@ function Anleitungen() {
           **LINK**) oder den Support von AsianConnect wenden.
         </p>
       </div>
-    </>
+    </div>
   );
 }
 
