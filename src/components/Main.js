@@ -6,7 +6,8 @@ import Home from "./Home";
 import StatsSite from "./StatsSite";
 import WhySite from "./WhySite";
 import TutSite from "./TutSite";
-import Footer from "./Footer"
+import Footer from "./Footer";
+import Kontakt from "./Kontakt"
 
 function Main() {
   const homeRef = useRef();
@@ -79,6 +80,8 @@ function Main() {
       <WhySite whyRef={whyRef} />
 
       <TutSite tutRef={tutRef} />
+
+      <Kontakt />
 
       <Footer />
     </div>

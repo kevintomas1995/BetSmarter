@@ -1,6 +1,8 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
-
+import {Chart} from 'chart.js';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
+Chart.register(ChartDataLabels);
 
 function Diagrams(props) {
   const labels = [
@@ -254,25 +256,25 @@ function Diagrams(props) {
   const filterHandler = () => {
     labels.forEach((liga) => {
       if (selectedMarket  == "Heim gewinnt") {
-        selected_data.push(data_ligen[liga].H * 100);
+        selected_data.push(Math.round(data_ligen[liga].H * 100));
       } else if (selectedMarket  === "Auswärts gewinnt") {
-        selected_data.push(data_ligen[liga].A * 100);
+        selected_data.push(Math.round(data_ligen[liga].A * 100));
       } else if (selectedMarket  === "Unentschieden") {
-        selected_data.push(data_ligen[liga].D * 100);
+        selected_data.push(Math.round(data_ligen[liga].D * 100));
       } else if (selectedMarket  === "Über 2.5 Tore") {
-        selected_data.push(data_ligen[liga].O2point5 * 100);
+        selected_data.push(Math.round(data_ligen[liga].O2point5 * 100));
       } else if (selectedMarket  === "Unter 2.5 Tore") {
-        selected_data.push(data_ligen[liga].U2point5 * 100);
+        selected_data.push(Math.round(data_ligen[liga].U2point5 * 100));
       } else if (selectedMarket  === "AHH") {
-        selected_data.push(data_ligen[liga].AHH * 100);
+        selected_data.push(Math.round(data_ligen[liga].AHH * 100));
       } else if (selectedMarket  === "AHA") {
-        selected_data.push(data_ligen[liga].AHA * 100);
+        selected_data.push(Math.round(data_ligen[liga].AHA * 100));
       } else if (selectedMarket  === "CH") {
-        selected_data.push(data_ligen[liga].CH * 100);
+        selected_data.push(Math.round(data_ligen[liga].CH * 100));
       } else if (selectedMarket  === "CD") {
-        selected_data.push(data_ligen[liga].CD * 100);
+        selected_data.push(Math.round(data_ligen[liga].CD * 100));
       } else if (selectedMarket  === "CA") {
-        selected_data.push(data_ligen[liga].CA * 100);
+        selected_data.push(Math.round(data_ligen[liga].CA * 100));
       }
       
     });
@@ -337,8 +339,10 @@ function Diagrams(props) {
     },
     responsive: true,
     plugins: {
-      legend: {
-        //   position: "left",
+      datalabels: {
+        color: 'black',
+        anchor: "center",
+        clamp: true
       },
       title: {
         display: false,

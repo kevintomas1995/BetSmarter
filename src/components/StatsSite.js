@@ -3,6 +3,7 @@ import "./StatsSite.css";
 import { FcFilledFilter, FcEmptyFilter, FcInfo } from "react-icons/fc";
 import ModalStats from "./ModalStats";
 import Diagrams from "./Diagrams";
+import ModalInfo from "./ModalInfo";
 
 function StatsSite(props) {
   const [market, setMarket] = useState("CD");
@@ -39,6 +40,7 @@ function StatsSite(props) {
               changeMarket={(market) => setMarket(market)}
             />
           )}
+          {/* <ModalInfo /> */}
           <Diagrams market={market} />
         </div>
       </div>
