@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./StatsSite.css";
-import { FcFilledFilter, FcEmptyFilter } from "react-icons/fc";
+import { FcFilledFilter, FcEmptyFilter, FcInfo } from "react-icons/fc";
 import ModalStats from "./ModalStats";
 import Diagrams from "./Diagrams";
 
 function StatsSite(props) {
+  const [market, setMarket] = useState("CD");
+
   return (
-    <div className="section">
-      <div classname="section__wrapper">
+    <div className="section" ref={props.statsRef}>
+      <div className="section__wrapper">
         <div className="section__header">
           <a className="section__header__text" style={{ paddingTop: "3%" }}>
-            Statistiken weit. Modal
+            Statistiken 
           </a>
         </div>
 
@@ -25,11 +27,19 @@ function StatsSite(props) {
               )}
             </button>
 
-            <span className="market_name">Over/Under 2,5</span>
+            <button className="menu-trigger" onClick={props.onClick}>
+              <span>Info</span>
+              <FcInfo size={20} />
+            </button>
           </div>
 
-          {props.isActive && <ModalStats onClick={props.hideModalHandler} />}
-          <Diagrams />
+          {props.isActive && (
+            <ModalStats
+              onClick={props.hideModalHandler}
+              changeMarket={(market) => setMarket(market)}
+            />
+          )}
+          <Diagrams market={market} />
         </div>
       </div>
     </div>

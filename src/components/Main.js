@@ -6,10 +6,11 @@ import Home from "./Home";
 import StatsSite from "./StatsSite";
 import WhySite from "./WhySite";
 import TutSite from "./TutSite";
+import Footer from "./Footer"
 
 function Main() {
   const homeRef = useRef();
-  const quotenRef = useRef();
+  const statsRef = useRef();
   const whyRef = useRef();
   const tutRef = useRef();
   const [isActive, setIsActive] = useState(false);
@@ -20,12 +21,9 @@ function Main() {
     setIsActive(false);
   };
 
-  function handleQuotenClick() {
-    quotenRef.current.scrollIntoView({ behavior: "smooth" });
-  }
-
   function handleWhyClick() {
-    whyRef.current.scrollIntoView({ behavior: "smooth" });
+    whyRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
+    console.log(whyRef.current);
   }
 
   const date = new Date();
@@ -48,19 +46,15 @@ function Main() {
     <div className="main" ref={homeRef}>
       <NavBar
         homeRef={homeRef}
-        quotenRef={quotenRef}
+        statsRef={statsRef}
         whyRef={whyRef}
         tutRef={tutRef}
       />
 
-      <Home
-        handleQuotenClick={handleQuotenClick}
-        handleWhyClick={handleWhyClick}
-        quotenRef={quotenRef}
-      />
+      <Home handleWhyClick={handleWhyClick} />
 
       {/* <div className="section">
-        <div classname="section__wrapper">
+        <div className="section__wrapper">
           <div className="section__header">
             <a className="section__header__text" style={{ paddingTop: "3%" }}>
               Beste Quoten
@@ -76,6 +70,7 @@ function Main() {
       </div> */}
 
       <StatsSite
+        statsRef={statsRef}
         onClick={onClick}
         isActive={isActive}
         hideModalHandler={hideModalHandler}
@@ -84,6 +79,8 @@ function Main() {
       <WhySite whyRef={whyRef} />
 
       <TutSite tutRef={tutRef} />
+
+      <Footer />
     </div>
   );
 }

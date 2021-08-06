@@ -5,7 +5,7 @@ import CarouselComponent from "./CarouselComponent";
 function WhySite(props) {
   return (
     <div className="section2" ref={props.whyRef}>
-      <div classname="section__wrapper">
+      <div className="section__wrapper">
         <div className="section__header">
           <a
             className="section__header__text"

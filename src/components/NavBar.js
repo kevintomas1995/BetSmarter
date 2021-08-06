@@ -18,16 +18,16 @@ function NavBar(props) {
     props.homeRef.current.scrollIntoView({ behavior: "smooth" });
   }
 
-  function handleQuotenClick() {
-    props.quotenRef.current.scrollIntoView({ behavior: "smooth" });
+  function handleStatsClick() {
+    props.statsRef.current.scrollIntoView({block: "end",  behavior: "smooth" });
   }
 
   function handleWhyClick() {
-    props.whyRef.current.scrollIntoView({ behavior: "smooth" });
+    props.whyRef.current.scrollIntoView({block: "end", behavior: "smooth" });
   }
 
   function handleTutClick() {
-    props.tutRef.current.scrollIntoView({ behavior: "smooth" });
+    props.tutRef.current.scrollIntoView({block: "start", behavior: "smooth" });
   }
 
   return (
@@ -58,7 +58,7 @@ function NavBar(props) {
                 <a className="navbar_item__text">Beste Quoten</a>
               </Link>
             </li> */}
-            <li className="navbar__item" onClick={handleWhyClick}>
+            <li className="navbar__item" onClick={handleStatsClick}>
               <Link
                 to="/warumBetSmart"
                 className="navbar__nav-links"
@@ -67,7 +67,7 @@ function NavBar(props) {
                 <a className="navbar_item__text">Statistiken</a>
               </Link>
             </li>
-            <li className="navbar__item" onClick={handleTutClick}>
+            <li className="navbar__item" onClick={handleWhyClick}>
               <Link
                 to="/anleitungen"
                 className="navbar__nav-links"
@@ -76,7 +76,7 @@ function NavBar(props) {
                 <a className="navbar_item__text">Warum BetSmart?</a>
               </Link>
             </li>
-            <li className="navbar__item" >
+            <li className="navbar__item" onClick={handleTutClick}>
               <Link
                 to="/"
                 className="navbar__nav-links"

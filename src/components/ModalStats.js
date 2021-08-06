@@ -1,48 +1,92 @@
 import React, { useRef, useState } from "react";
 import Modal from "./Modal";
-import "./ModalStats.css"
-
-
+import "./ModalStats.css";
 
 // FÜR DROPDOWN https://codesandbox.io/s/dropdown-menu-jzldk
 
 function ModalComponent(props) {
   const dropdownRef = useRef(null);
   const [isActive, setIsActive] = useState(dropdownRef, false);
-  const onClick = () => setIsActive(!isActive);
+
 
   return (
-    <Modal onClose={props.onClick}> 
+    <Modal onClose={props.onClick}>
       <div className="modal_wrapper">
         <nav
-            ref={dropdownRef}
-            className={`menu ${isActive ? "active" : "inactive"}`}
-          >
-            <ul>
-              <li>
-                <a onClick={props.onClick}>Heim gewinnt</a>
-              </li>
-              <li>
-                <a onClick={props.onClick}>Unentschieden</a>
-              </li>
-              <li>
-                <a onClick={props.onClick}>Auswärts gewinnt</a>
-              </li>
-              <li>
-                <a onClick={props.onClick}>Über 2.5 Tore</a>
-              </li>
-              <li>
-                <a onClick={props.onClick}>Unter 2.5 Tore</a>
-              </li>
-              <li>
-                <a onClick={props.onClick}>AHH</a>
-              </li>
-              <li>
-                <a onClick={props.onClick}>AHA</a>
-              </li>
-            </ul>
-          </nav>
+          ref={dropdownRef}
+          className={`menu ${isActive ? "active" : "inactive"}`}
+        >
+          <ul>
+            <li>
+              <a onClick={() => {
+                props.changeMarket("Heim gewinnt");
+                props.onClick();
+              }}>Heim gewinnt</a>
+            </li>
+            <li>
+              <a onClick={() => {
+                props.changeMarket("Unentschieden");
+                props.onClick();
+              }}>Unentschieden</a>
+            </li>
+            <li>
+              <a onClick={() => {
+                props.changeMarket("Auswärts gewinnt");
+                props.onClick();
+              }}>Auswärts gewinnt</a>
+            </li>
+            <li>
+              <a onClick={() => {
+                props.changeMarket("Über 2.5 Tore");
+                props.onClick();
+              }}>Über 2.5 Tore</a>
+            </li>
+            <li>
+              <a onClick={() => {
+                props.changeMarket("Unter 2.5 Tore");
+                props.onClick();
+              }}>Unter 2.5 Tore</a>
+            </li>
+            <li>
+              <a onClick={() => {
+                props.changeMarket("AHH");
+                props.onClick();
+              }}>AHH</a>
+            </li>
+            <li>
+              {/* <a onClick={props.onClick}>AHA</a> */}
+              <a onClick={() => {
+                props.changeMarket("AHA");
+                props.onClick();
+              }}>AHA</a>
+            </li>
 
+
+            <li>
+              {/* <a onClick={props.onClick}>AHA</a> */}
+              <a onClick={() => {
+                props.changeMarket("CH");
+                props.onClick();
+              }}>CH</a>
+            </li>
+            <li>
+              {/* <a onClick={props.onClick}>AHA</a> */}
+              <a onClick={() => {
+                props.changeMarket("CD");
+                props.onClick();
+              }}>CD</a>
+            </li>
+            <li>
+              {/* <a onClick={props.onClick}>AHA</a> */}
+              <a onClick={() => {
+                props.changeMarket("CA");
+                props.onClick();
+              }}>CA</a>
+            </li>
+
+
+          </ul>
+        </nav>
       </div>
     </Modal>
   );
