@@ -42,7 +42,7 @@ function Kontakt() {
         <div className="section_items">
          
             <form onSubmit={sendEmail}>
-              <div>
+              <div className="contact-form">
                 <div>
                   <input
                     type="text"

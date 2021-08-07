@@ -227,7 +227,7 @@ function Diagrams(props) {
       D: "0.8928571428571429",
       A: "0.9891774891774892",
       O2point5: "0.9588744588744589",
-      U2point5v: "0.8365800865800865",
+      U2point5: "0.8365800865800865",
       AHH: "0.7976190476190477",
       AHA: "0.7911255411255411",
       CH: "0.9632034632034632",
@@ -340,9 +340,9 @@ function Diagrams(props) {
     responsive: true,
     plugins: {
       datalabels: {
-        color: 'black',
+        color: 'rgba(255, 99, 132, 1)',
         anchor: "center",
-        clamp: true
+        // clamp: true
       },
       title: {
         display: false,

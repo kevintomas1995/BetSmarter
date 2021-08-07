@@ -1,16 +1,28 @@
 import React, { useRef, useState } from "react";
 import Modal from "./Modal";
-import "./ModalInfo.css"
+import "./ModalInfo.css";
+import { AiFillCloseCircle } from "react-icons/ai";
 
 function ModalInfo(props) {
   const dropdownRef = useRef(null);
   const [isActive, setIsActive] = useState(dropdownRef, false);
 
-
   return (
     <Modal onClose={props.onClick}>
       <div className="modal_wrapper">
-        halllooooo
+        <div className="modal_header">
+          <a>Infos zu den Statistiken</a>
+        </div>
+        <div className="modal_body">
+          <p>Die Statistik gibt pro Wettmarkt an, bei wie viel Prozent der Spiele
+          aus der jeweiligen Liga <b>die Quote von Pinnacle Sports über dem Marktdurchschnitt </b>lag. </p>
+          <p>Dafür wurden alle Spiele der letzten 2 Saisons aus den jeweiligen Ligen analysiert.</p>
+          <p>Unter <b>"Märkte"</b> kannst du dir die Statistiken für verschiedenste Märkte anzeigen lassen</p>
+          <p>Bei Interesse kannst du dich gerne bei uns melden!</p>
+        </div>
+        <button className="button" onClick={props.onButtonClick}>
+          Schließen
+        </button>
       </div>
     </Modal>
   );

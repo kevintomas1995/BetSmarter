@@ -13,34 +13,36 @@ function StatsSite(props) {
       <div className="section__wrapper">
         <div className="section__header">
           <a className="section__header__text" style={{ paddingTop: "3%" }}>
-            Statistiken 
+            Statistiken
           </a>
         </div>
 
         <div className="section_items">
           <div className="odds_market">
-            <button className="menu-trigger" onClick={props.onClick}>
+            <button className="menu-trigger" onClick={props.onClickMarkets}>
               <span>Märkte</span>
-              {props.isActive ? (
+              {props.isActiveMarkets ? (
                 <FcFilledFilter size={20} />
               ) : (
                 <FcEmptyFilter size={20} />
               )}
             </button>
 
-            <button className="menu-trigger" onClick={props.onClick}>
+            <button className="menu-trigger" onClick={props.onClickInfo}>
               <span>Info</span>
               <FcInfo size={20} />
             </button>
           </div>
 
-          {props.isActive && (
+          {props.isActiveMarkets && (
             <ModalStats
-              onClick={props.hideModalHandler}
+              onClick={props.hideModalMarketHandler}
               changeMarket={(market) => setMarket(market)}
             />
           )}
-          {/* <ModalInfo /> */}
+          {props.isActiveInfo && (
+            <ModalInfo onClick={props.hideModalInfoHandler} onButtonClick={props.hideModalInfoHandler}/>
+          )}
           <Diagrams market={market} />
         </div>
       </div>

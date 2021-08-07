@@ -9,7 +9,7 @@ function Footer() {
       <div className="footer_item">Kontakt</div>
       <div className="footer_item">Impressum</div>
       <div className="insta_item">
-        <div className="footer_item" style={{marginRight: "5%"}}>Instagram</div>
+        {/* <div className="footer_item" style={{marginRight: "5%"}}>Instagram</div> */}
         <AiOutlineInstagram size={32}/>
       </div>
     </div>

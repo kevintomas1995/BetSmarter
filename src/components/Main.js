@@ -14,12 +14,18 @@ function Main() {
   const statsRef = useRef();
   const whyRef = useRef();
   const tutRef = useRef();
-  const [isActive, setIsActive] = useState(false);
+  const [isActiveMarkets, setIsActiveMarkets] = useState(false);
+  const [isActiveInfo, setIsActiveInfo] = useState(false);
 
-  const onClick = () => setIsActive(!isActive);
+  const onClickMarkets = () => setIsActiveMarkets(!isActiveMarkets);
+  const onClickInfo = () => setIsActiveInfo(!isActiveInfo);
 
-  const hideModalHandler = () => {
-    setIsActive(false);
+  const hideModalMarketHandler = () => {
+    setIsActiveMarkets(false);
+  };
+
+  const hideModalInfoHandler = () => {
+    setIsActiveInfo(false);
   };
 
   function handleWhyClick() {
@@ -72,9 +78,12 @@ function Main() {
 
       <StatsSite
         statsRef={statsRef}
-        onClick={onClick}
-        isActive={isActive}
-        hideModalHandler={hideModalHandler}
+        onClickMarkets={onClickMarkets}
+        onClickInfo={onClickInfo}
+        isActiveMarkets={isActiveMarkets}
+        isActiveInfo={isActiveInfo}
+        hideModalMarketHandler={hideModalMarketHandler}
+        hideModalInfoHandler={hideModalInfoHandler}
       />
 
       <WhySite whyRef={whyRef} />

@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
     margin-top: 2%;
+    padding-top: 3%;
   }
   
   .section__header > a {
@@ -30,11 +31,42 @@
     flex-wrap: wrap;
   }
 
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-control {
+    margin-bottom: 6%;
+    width: 40vw;
+  }
+  .btn {
+    border-radius: 3px;
+    background-color: #636363;
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 10%;
+    font-size: 20px;
+  }
+
   @media screen and (max-width: 740px) {
     .section__header {
         display: flex;
         flex-direction: column;
         font-weight: bold;
         font-size: 90%;
+      }
+
+      .form-control {
+        
+        width: 60vw;
       }
 }
