@@ -101,42 +101,9 @@ function ReasonItem(props) {
         </div>
       )}
 
-      {props.number === 3 && (
-        <div className="reason_item">
-          <div className="reason_item_header">
-            Bei 68% der Spiele die besten Quoten
-            <GiArchiveResearch size={50} />
-          </div>
-          <div className="reason_item_body">
-            Eine Untersuchung hat ergeben, dass Pinnacle in{" "}
-            <b>2 von 3 Spielen</b> die <b>besten Quoten</b> anbieten kann
-            <br></br>
-            <br></br> <FcApproval size={30} />
-            <br></br>
-            <br></br>
-            Dabei sind die Wettsteuern der anderen Bookies nicht einmal
-            einbezogen worden!
-            <br></br>
-            <br></br> <FcMultipleInputs size={30} />
-            <br></br>
-            <br></br>
-            Erfahre auf den nächsten Slides, wie du in den Genuss von Pinnacle's
-            <b>Top-Quoten</b> kommen kannst
-            <div
-              className="reason_item_body_action"
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "flex-end",
-              }}
-            >
-              <button>Registrieren</button>
-            </div>
-          </div>
-        </div>
-      )}
+  
 
-      {props.number === 4 && (
+      {props.number === 3 && (
         <div className="reason_item">
           <div className="reason_item_header">
             Pinnacle zu Hause in Deutschland nutzen
@@ -170,7 +137,7 @@ function ReasonItem(props) {
         </div>
       )}
 
-      {props.number === 5 && (
+      {props.number === 4 && (
         <div className="reason_item">
           <div className="reason_item_header">
             AsianConnect
@@ -214,7 +181,7 @@ function ReasonItem(props) {
         </div>
       )}
 
-      {props.number === 6 && (
+      {props.number === 5 && (
         <div className="reason_item">
           <div className="reason_item_header">
             AsianConnect

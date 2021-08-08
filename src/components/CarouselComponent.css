@@ -1,11 +1,42 @@
 .carousel_component {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80vh;
 }
 
 .carousel_component > i {
-    font-size: 350%;
-    cursor: pointer;
+  font-size: 350%;
+  cursor: pointer;
+}
+
+.mobile_reasons {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .carousel_component {
+    display: none;
+  }
+
+  .mobile_reasons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .mobile_reason_item {
+    margin: 5%;
+    max-width: 50vw;
+  }
+
+  .MuiButton-outlinedPrimary {
+    color: black !important;
+  }
+
+  .MuiButtonBase-root {
+    background-color: white !important;
+  }
 }
