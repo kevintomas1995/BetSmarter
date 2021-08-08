@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 80vh;
+  width: 96vw;
 }
 
 .carousel_component > i {
@@ -20,6 +20,16 @@
   }
 
   .mobile_reasons {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .mobile_reasons_section {
+    margin-top: 5%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -29,14 +39,15 @@
 
   .mobile_reason_item {
     margin: 5%;
-    max-width: 50vw;
+    max-width: 40vw;
   }
+
+
 
   .MuiButton-outlinedPrimary {
-    color: black !important;
-  }
-
-  .MuiButtonBase-root {
-    background-color: white !important;
+    color: white !important;
+    background-color: black !important;
+    border-radius: 25px !important;
+    min-height: 13vh;
   }
 }

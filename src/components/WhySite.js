@@ -15,9 +15,9 @@ function WhySite(props) {
           </a>
         </div>
 
-        <div className="section_items">
+       
           <CarouselComponent />
-        </div>
+       
       </div>
     </div>
   );

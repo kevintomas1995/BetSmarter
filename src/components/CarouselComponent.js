@@ -59,23 +59,26 @@ function CarouselComponent() {
         />
       </div>
 
-
       <div className="mobile_reasons">
-        <p style={{color: "white"}}>Klicke die Icons an, um mehr zu erfahren!</p>
-        <div className="mobile_reason_item">
-          <MobileReasons title={"1"}/>
-        </div>
-        <div className="mobile_reason_item">
-          <MobileReasons title={"2"}/>
-        </div>
-        <div className="mobile_reason_item">
-          <MobileReasons title={"3"}/>
-        </div>
-        <div className="mobile_reason_item">
-          <MobileReasons title={"4"}/>
-        </div>
-        <div className="mobile_reason_item">
-          <MobileReasons title={"5"}/>
+        <p style={{ color: "white" }}>
+          Klicke die Icons an, um mehr zu erfahren!
+        </p>
+        <div className="mobile_reasons_section">
+          <div className="mobile_reason_item">
+            <MobileReasons reasonNumber={1} />
+          </div>
+          <div className="mobile_reason_item">
+            <MobileReasons reasonNumber={2} />
+          </div>
+          <div className="mobile_reason_item">
+            <MobileReasons reasonNumber={3} />
+          </div>
+          <div className="mobile_reason_item">
+            <MobileReasons reasonNumber={4} />
+          </div>
+          <div className="mobile_reason_item">
+            <MobileReasons reasonNumber={5} />
+          </div>
         </div>
       </div>
     </>
