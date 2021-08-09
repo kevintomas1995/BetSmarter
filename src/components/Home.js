@@ -14,10 +14,10 @@ function Home(props) {
             </a>
           </div>
         </div>
-        <HomeDescription text="PINNACLE AUS DEUTSCHLAND NUTZEN" />
-        <HomeDescription text="BESTE QUOTEN" />
-        <HomeDescription text="KEINE WETTSTEUER" />
-        <HomeDescription text="KEINE LIMITIERUNG" />
+        <HomeDescription text="Pinnacle in Deutschland nutzen" />
+        <HomeDescription text="Betse Quoten" />
+        <HomeDescription text="Keine Wettsteuer" />
+        <HomeDescription text="Keine Limitierungen" />
 
         <div className="main__actions">
           <button

@@ -14,7 +14,7 @@
   display: none;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 560px) {
   .carousel_component {
     display: none;
   }
@@ -39,7 +39,8 @@
 
   .mobile_reason_item {
     margin: 5%;
-    max-width: 40vw;
+    /* width: 23vw; */
+
   }
 
 
@@ -49,5 +50,6 @@
     background-color: black !important;
     border-radius: 25px !important;
     min-height: 13vh;
+    min-width: 19vw !important;
   }
 }

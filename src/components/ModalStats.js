@@ -11,7 +11,7 @@ function ModalComponent(props) {
 
   return (
     <Modal onClose={props.onClick}>
-      <div className="modal_wrapper">
+      <div className="modal_wrapper_stats">
         <nav
           ref={dropdownRef}
           className={`menu ${isActive ? "active" : "inactive"}`}

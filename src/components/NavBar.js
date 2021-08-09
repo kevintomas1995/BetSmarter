@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 import "@fontsource/dm-sans";
+import { AiOutlineInstagram } from "react-icons/ai";
 
 function NavBar(props) {
   const [clicked, setClicked] = useState(false);
@@ -102,7 +103,7 @@ function NavBar(props) {
                 className="navbar__nav-links"
                 onClick={closeMobileMenu}
               >
-                <a className="navbar_item__text">Instagram</a>
+                <a className="navbar_item__text"><AiOutlineInstagram size={32}/></a>
               </Link>
             </li>
           

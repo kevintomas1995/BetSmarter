@@ -28,3 +28,10 @@
   margin-top: 1%;
   font-size: 12px;
 }
+
+@media screen and (min-width: 560px) {
+  .modal_wrapper {
+    max-width: 40vw;
+    margin: auto;
+  }
+}

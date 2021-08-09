@@ -28,6 +28,7 @@ import {
   FcHeadset,
   FcCallback,
 } from "react-icons/fc";
+import { GiMoneyStack, GiArchiveResearch } from "react-icons/gi";
 import ac from "../images/asianconnect.png";
 
 const styles = (theme) => ({
@@ -90,9 +91,7 @@ export default function MobileReasons(props) {
         <>
           <Button variant="outlined" color="primary" onClick={handleClickOpen}>
             <div className="button_title">
-              {" "}
-              Beste Quoten
-              <AiOutlineRise />
+              <AiOutlineRise size={25} />
             </div>
           </Button>
           <Dialog
@@ -101,28 +100,51 @@ export default function MobileReasons(props) {
             open={open}
           >
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-              Modal title
+              Nutze die besten Quoten
             </DialogTitle>
             <DialogContent dividers>
               <Typography gutterBottom>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
+                  <a>
+                    Du hast keine Lust mehr, für jedes Spiel die{" "}
+                    <b>besten Quoten</b> herauszusuchen?
+                  </a>
+                  <FcSearch size={30} />
+                </div>
               </Typography>
               <Typography gutterBottom>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
+                  <a>
+                    {" "}
+                    Dann wende dich von den Mainstream-Buchmachern wie Bet365
+                    und Co. ab und spare dir <b>Zeit</b> und <b>Geld</b>!
+                  </a>
+                  <div>
+                    {" "}
+                    <FcAlarmClock size={30} /> <GiMoneyStack size={30} />
+                  </div>
+                </div>
               </Typography>
               <Typography gutterBottom>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                Wie? Ganz einfach! Nutze <b>Pinnacle Sports</b> und profitiere
+                von den besten Quoten auf dem Wettmarkt!
               </Typography>
             </DialogContent>
             <DialogActions>
               <Button autoFocus onClick={handleClose} color="primary">
-                Save changes
+              Registrieren
               </Button>
             </DialogActions>
           </Dialog>
@@ -133,17 +155,7 @@ export default function MobileReasons(props) {
         <>
           <Button variant="outlined" color="primary" onClick={handleClickOpen}>
             <div className="button_title">
-              {" "}
-              Nr.1 der Bookies
-              <img
-              src={pinnacle}
-              style={{
-                borderRadius: "35%",
-                height: "20%",
-                width: "20%",
-                marginTop: "2%",
-              }}
-            />
+              <FcCalculator size={35} />
             </div>
           </Button>
           <Dialog
@@ -152,28 +164,50 @@ export default function MobileReasons(props) {
             open={open}
           >
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-              Modal title
+              Pinnacle Sports
             </DialogTitle>
             <DialogContent dividers>
               <Typography gutterBottom>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
+                  <a>
+                    Pinnacle ist einfach ein Muss jür jeden ambitionierten
+                    Tipper!
+                  </a>
+                  <FcSportsMode size={30} />
+                </div>
               </Typography>
               <Typography gutterBottom>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
+                  <a>
+                    Pinnacle Sports weiß mit seinen <b>Top-Quoten</b> und{" "}
+                    <b>hohen Einsatzlimits</b> seit Jahren zu überzeugen
+                  </a>
+                  <div>
+                    {" "}
+                    <FcBullish size={30} /> <FcCalculator size={30} />
+                  </div>
+                </div>
               </Typography>
               <Typography gutterBottom>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                Zudem musst du bei Pinnacle <b>keine Wettsteuer</b> abführen und
+                es bestehen <b>keine Einzahlungs- oder Einsatzlimits</b>!
               </Typography>
             </DialogContent>
             <DialogActions>
               <Button autoFocus onClick={handleClose} color="primary">
-                Save changes
+              Registrieren
               </Button>
             </DialogActions>
           </Dialog>
@@ -184,8 +218,6 @@ export default function MobileReasons(props) {
         <>
           <Button variant="outlined" color="primary" onClick={handleClickOpen}>
             <div className="button_title">
-              {" "}
-              Pinnacle in Deutschland
               <FcHome size={25} />
             </div>
           </Button>
@@ -195,28 +227,53 @@ export default function MobileReasons(props) {
             open={open}
           >
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-              Modal title
+              Pinnacle aus Deutschland nutzen
             </DialogTitle>
             <DialogContent dividers>
               <Typography gutterBottom>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
+                  <a>
+                    Seit 2016 ist Pinnacle <b>eigentlich</b> nicht mehr aus
+                    Deutschland aus zu nutzen
+                  </a>
+                  <div>
+                    {" "}
+                    <FcCancel size={30} />
+                  </div>
+                </div>
               </Typography>
               <Typography gutterBottom>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
+                  <a>
+                    BetSmart hat jedoch die <b>Lösung</b>!
+                  </a>
+                  <div>
+                    {" "}
+                    <FcIdea size={30} />
+                  </div>
+                </div>
               </Typography>
               <Typography gutterBottom>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                Mit unserem Partner <b>AsianConnect</b> bieten wir die
+                Möglichkeit, Pinnacle Sports völlig <b>legal</b> und{" "}
+                <b>bequem</b> aus Deutschland asu zu nutzen
               </Typography>
             </DialogContent>
             <DialogActions>
               <Button autoFocus onClick={handleClose} color="primary">
-                Save changes
+              Registrieren
               </Button>
             </DialogActions>
           </Dialog>
@@ -227,17 +284,7 @@ export default function MobileReasons(props) {
         <>
           <Button variant="outlined" color="primary" onClick={handleClickOpen}>
             <div className="button_title">
-              {" "}
-              AsianConnect
-              <img
-              src={ac}
-              style={{
-                borderRadius: "35%",
-                height: "20%",
-                width: "20%",
-                marginTop: "2%",
-              }}
-            />
+              <FcVip size={35} />
             </div>
           </Button>
           <Dialog
@@ -246,28 +293,55 @@ export default function MobileReasons(props) {
             open={open}
           >
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-              Modal title
+              AsianConnect
             </DialogTitle>
             <DialogContent dividers>
               <Typography gutterBottom>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
+                  <a>
+                    AsianConnect mietet ein sog. Agentenkonto bei Pinnacle. Dies
+                    ist ausschließlich <b>exklusiven Partnern </b>wie
+                    AsianConnect vorbehalten
+                  </a>
+                  <div>
+                    {" "}
+                    <FcVip size={30} />
+                  </div>
+                </div>
               </Typography>
               <Typography gutterBottom>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
+                  <a>
+                    Über dieses Konto kannst du dann ganz normal{" "}
+                    <b>Wetten bei Pinnacle platzieren</b>
+                  </a>
+                  <div>
+                    {" "}
+                    <FcDonate size={30} />
+                  </div>
+                </div>
               </Typography>
               <Typography gutterBottom>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                <br></br>
+                Du wirst die <b>volle Kontrolle</b> haben und kannst ganz{" "}
+                <b>entspannt</b> die Vorzüge von Pinnacle <b>genießen</b>!
               </Typography>
             </DialogContent>
             <DialogActions>
               <Button autoFocus onClick={handleClose} color="primary">
-                Save changes
+              Registrieren
               </Button>
             </DialogActions>
           </Dialog>
@@ -279,7 +353,7 @@ export default function MobileReasons(props) {
           <Button variant="outlined" color="primary" onClick={handleClickOpen}>
             <div className="button_title">
               {" "}
-              Top Kunden-Service
+              {/* Top Kunden-Service */}
               <FcCustomerSupport size={30} />
             </div>
           </Button>
@@ -289,28 +363,53 @@ export default function MobileReasons(props) {
             open={open}
           >
             <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-              Modal title
+              AsianConnect (2)
             </DialogTitle>
             <DialogContent dividers>
               <Typography gutterBottom>
-                Cras mattis consectetur purus sit amet fermentum. Cras justo
-                odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
-                risus, porta ac consectetur ac, vestibulum at eros.
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
+                  <a>
+                    AsianConnect bietet einen{" "}
+                    <b>exzellenten Customer Support</b>
+                  </a>
+                  <div>
+                    {" "}
+                    <FcCustomerSupport size={30} />
+                  </div>
+                </div>
               </Typography>
               <Typography gutterBottom>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
-                dolor auctor.
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                  }}
+                >
+                  <a>
+                    Egal ob <b>Live-Chat, Skype oder E-Mail</b>, unser Partner
+                    AsianConnect steht dir immer zur Verfügung
+                  </a>
+                  <div>
+                    {" "}
+                    <FcHeadset size={30} /> <FcCallback size={30} />
+                  </div>
+                </div>
               </Typography>
               <Typography gutterBottom>
-                Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
-                cursus magna, vel scelerisque nisl consectetur et. Donec sed
-                odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                Schaue hier in unseren <b>Anleitungen</b> nach, wie du dich bei
+                AsianConnect registrierst und deren Services nutzt
               </Typography>
             </DialogContent>
             <DialogActions>
               <Button autoFocus onClick={handleClose} color="primary">
-                Save changes
+                Registrieren
               </Button>
             </DialogActions>
           </Dialog>

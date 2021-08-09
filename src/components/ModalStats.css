@@ -1,57 +1,60 @@
-.modal_wrapper {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+.modal_wrapper_stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
 }
 
-
 .menu {
-    background: black;
-    border-radius: 8px;
-    position: absolute;
-    top: -50%;
-    /* right: 0; */
-    width: 50%;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    visibility: hidden;
-    /* transform: translateY(-20px); */
-    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
-    left: 50%;
-    transform: translateX(-50%);
+  background: black;
+  border-radius: 8px;
+  position: absolute;
+  top: -50%;
+  /* right: 0; */
+  width: 50%;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  /* transform: translateY(-20px); */
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  /* transform: translateY(0); */
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  left: 50%;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #dddddd;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  cursor: pointer;
+}
+
+.menu li a:hover {
+  color: black;
+  background-color: white;
+}
+
+@media screen and (min-width: 560px) {
+  .menu {
+    top: 16%;
   }
-  
-  
-  .menu.active {
-    opacity: 1;
-    visibility: visible;
-    /* transform: translateY(0); */
-    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
-    left: 50%;
-    
-  }
-  
-  .menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu li {
-    border-bottom: 1px solid #dddddd;
-  }
-  
-  .menu li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-    display: block;
-    cursor: pointer;
-  }
-  
-  .menu li a:hover {
-    color: black;
-    background-color: white;
-  }
+}
