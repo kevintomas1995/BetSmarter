@@ -1,11 +1,11 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import Modal from "./Modal";
 import "./ModalInfo.css";
-import { AiFillCloseCircle } from "react-icons/ai";
+
 
 function ModalInfo(props) {
   const dropdownRef = useRef(null);
-  const [isActive, setIsActive] = useState(dropdownRef, false);
+  
 
   return (
     <Modal onClose={props.onClick}>

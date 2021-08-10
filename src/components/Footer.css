@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.footer_item:hover {
+  cursor: pointer;
+}
+
 .insta_item {
   display: flex;
   flex-direction: row;

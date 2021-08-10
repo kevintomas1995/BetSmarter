@@ -15,7 +15,7 @@ function Home(props) {
           </div>
         </div>
         <HomeDescription text="Pinnacle in Deutschland nutzen" />
-        <HomeDescription text="Betse Quoten" />
+        <HomeDescription text="Beste Quoten" />
         <HomeDescription text="Keine Wettsteuer" />
         <HomeDescription text="Keine Limitierungen" />
 

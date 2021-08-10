@@ -7,7 +7,7 @@ import StatsSite from "./StatsSite";
 import WhySite from "./WhySite";
 import TutSite from "./TutSite";
 import Footer from "./Footer";
-import Kontakt from "./Kontakt"
+import Kontakt from "./Kontakt";
 
 function Main() {
   const homeRef = useRef();
@@ -16,9 +16,11 @@ function Main() {
   const tutRef = useRef();
   const [isActiveMarkets, setIsActiveMarkets] = useState(false);
   const [isActiveInfo, setIsActiveInfo] = useState(false);
+  const [isActiveImpressum, setIsActiveImpressum] = useState(false);
 
   const onClickMarkets = () => setIsActiveMarkets(!isActiveMarkets);
   const onClickInfo = () => setIsActiveInfo(!isActiveInfo);
+  const onClickImpressum = () => setIsActiveImpressum(!isActiveImpressum);
 
   const hideModalMarketHandler = () => {
     setIsActiveMarkets(false);
@@ -26,6 +28,10 @@ function Main() {
 
   const hideModalInfoHandler = () => {
     setIsActiveInfo(false);
+  };
+
+  const hideModalImpressumHandler = () => {
+    setIsActiveImpressum(false);
   };
 
   function handleWhyClick() {
@@ -92,7 +98,11 @@ function Main() {
 
       <Kontakt />
 
-      <Footer />
+      <Footer
+        hideModalImpressumHandler={hideModalImpressumHandler}
+        onClickImpressum={onClickImpressum}
+        isActiveImpressum={isActiveImpressum}
+      />
     </div>
   );
 }
