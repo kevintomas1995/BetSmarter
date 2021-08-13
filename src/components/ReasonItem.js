@@ -53,7 +53,15 @@ function ReasonItem(props) {
                 alignItems: "flex-end",
               }}
             >
-              <button>Registrieren</button>
+              <button>
+                <a
+                  className="button_link_reason"
+                  target="_blank"
+                  href="https://de.asianconnect88.com/register/?pk_kwd=YbzPaMfriy"
+                >
+                  Registrieren
+                </a>
+              </button>
             </div>
           </div>
         </div>
@@ -95,13 +103,19 @@ function ReasonItem(props) {
                 alignItems: "flex-end",
               }}
             >
-              <button>Registrieren</button>
+              <button>
+                <a
+                  className="button_link_reason"
+                  target="_blank"
+                  href="https://de.asianconnect88.com/register/?pk_kwd=YbzPaMfriy"
+                >
+                  Registrieren
+                </a>
+              </button>
             </div>
           </div>
         </div>
       )}
-
-  
 
       {props.number === 3 && (
         <div className="reason_item">
@@ -131,7 +145,15 @@ function ReasonItem(props) {
                 alignItems: "flex-end",
               }}
             >
-              <button>Registrieren</button>
+              <button>
+                <a
+                  className="button_link_reason"
+                  target="_blank"
+                  href="https://de.asianconnect88.com/register/?pk_kwd=YbzPaMfriy"
+                >
+                  Registrieren
+                </a>
+              </button>
             </div>
           </div>
         </div>
@@ -175,7 +197,15 @@ function ReasonItem(props) {
                 alignItems: "flex-end",
               }}
             >
-              <button>Registrieren</button>
+              <button>
+                <a
+                  className="button_link_reason"
+                  target="_blank"
+                  href="https://de.asianconnect88.com/register/?pk_kwd=YbzPaMfriy"
+                >
+                  Registrieren
+                </a>
+              </button>
             </div>
           </div>
         </div>
@@ -201,13 +231,14 @@ function ReasonItem(props) {
             <br></br> <FcCustomerSupport size={30} />
             <br></br>
             <br></br>
-            Egal ob <b>Live-Chat, Skype oder E-Mail</b>, unser Partner AsianConnect
-            steht dir immer zur Verfügung
+            Egal ob <b>Live-Chat, Skype oder E-Mail</b>, unser Partner
+            AsianConnect steht dir immer zur Verfügung
             <br></br>
             <br></br> <FcHeadset size={30} /> <FcCallback size={30} />
             <br></br>
             <br></br>
-            Schaue hier in unseren <b>Anleitungen</b> nach, wie du dich bei AsianConnect registrierst und deren Services nutzt
+            Schaue hier in unseren <b>Anleitungen</b> nach, wie du dich bei
+            AsianConnect registrierst und deren Services nutzt
             <div
               className="reason_item_body_action"
               style={{
@@ -216,7 +247,15 @@ function ReasonItem(props) {
                 alignItems: "flex-end",
               }}
             >
-              <button>Registrieren</button>
+              <button>
+                <a
+                  className="button_link_reason"
+                  target="_blank"
+                  href="https://de.asianconnect88.com/register/?pk_kwd=YbzPaMfriy"
+                >
+                  Registrieren
+                </a>
+              </button>
             </div>
           </div>
         </div>

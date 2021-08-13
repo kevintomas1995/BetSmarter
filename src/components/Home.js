@@ -3,6 +3,7 @@ import FadeIn from "react-fade-in";
 import HomeDescription from "./HomeDescription";
 import "./Home.css";
 
+
 function Home(props) {
   return (
     <div className="main__wrapper">
@@ -17,14 +18,20 @@ function Home(props) {
         <HomeDescription text="Pinnacle in Deutschland nutzen" />
         <HomeDescription text="Beste Quoten" />
         <HomeDescription text="Keine Wettsteuer" />
-        <HomeDescription text="Keine Limitierungen" />
+        <HomeDescription text="Keine Limitierungen, hohe Einsatzlimits" />
 
         <div className="main__actions">
           <button
             className="main__actions__button1"
             onClick={props.handleQuotenClick}
           >
-            <a>REGISTRIEREN</a>
+            <a
+              className="button_link"
+              target="_blank"
+              href="https://de.asianconnect88.com/register/?pk_kwd=YbzPaMfriy"
+            >
+              REGISTRIEREN
+            </a>
           </button>
           <button
             className="main__actions__button2"

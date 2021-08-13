@@ -5,7 +5,7 @@ import emailjs from 'emailjs-com';
 
 init("user_VYUxfuaqCOkmhHuH4RFjm");
 
-function Kontakt() {
+function Kontakt(props) {
   function sendEmail(e) {
     e.preventDefault();
 
@@ -28,7 +28,7 @@ function Kontakt() {
   }
 
   return (
-    <div className="section3">
+    <div className="section3" >
       <div className="section__wrapper">
         <div className="section__header">
           <a

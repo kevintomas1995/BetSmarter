@@ -6,7 +6,7 @@ import Diagrams from "./Diagrams";
 import ModalInfo from "./ModalInfo";
 
 function StatsSite(props) {
-  const [market, setMarket] = useState("CD");
+  const [market, setMarket] = useState("Heim gewinnt");
 
   return (
     <div className="section" ref={props.statsRef}>

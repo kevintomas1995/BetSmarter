@@ -1,6 +1,4 @@
-.wrapper {
-  
-}
+
 
 .reason_item {
   min-height: 65vh;
@@ -48,6 +46,11 @@
     margin-top: 10%;
   }
   
-  .reason_item_body_action > button:hover {
+  .button_link_reason {
+    text-decoration: none;
+    color: white;
+  }
+
+  .button_link_reason > button:hover {
   font-weight: bold;
   }

@@ -144,7 +144,13 @@ export default function MobileReasons(props) {
             </DialogContent>
             <DialogActions>
               <Button autoFocus onClick={handleClose} color="primary">
-              Registrieren
+                <a
+                  className="mobile_register_button"
+                  target="_blank"
+                  href="https://de.asianconnect88.com/register/?pk_kwd=YbzPaMfriy"
+                >
+                  Registrieren
+                </a>
               </Button>
             </DialogActions>
           </Dialog>
@@ -206,8 +212,14 @@ export default function MobileReasons(props) {
               </Typography>
             </DialogContent>
             <DialogActions>
-              <Button autoFocus onClick={handleClose} color="primary">
-              Registrieren
+            <Button autoFocus onClick={handleClose} color="primary">
+                <a
+                  className="mobile_register_button"
+                  target="_blank"
+                  href="https://de.asianconnect88.com/register/?pk_kwd=YbzPaMfriy"
+                >
+                  Registrieren
+                </a>
               </Button>
             </DialogActions>
           </Dialog>
@@ -272,8 +284,14 @@ export default function MobileReasons(props) {
               </Typography>
             </DialogContent>
             <DialogActions>
-              <Button autoFocus onClick={handleClose} color="primary">
-              Registrieren
+            <Button autoFocus onClick={handleClose} color="primary">
+                <a
+                  className="mobile_register_button"
+                  target="_blank"
+                  href="https://de.asianconnect88.com/register/?pk_kwd=YbzPaMfriy"
+                >
+                  Registrieren
+                </a>
               </Button>
             </DialogActions>
           </Dialog>
@@ -340,8 +358,14 @@ export default function MobileReasons(props) {
               </Typography>
             </DialogContent>
             <DialogActions>
-              <Button autoFocus onClick={handleClose} color="primary">
-              Registrieren
+            <Button autoFocus onClick={handleClose} color="primary">
+                <a
+                  className="mobile_register_button"
+                  target="_blank"
+                  href="https://de.asianconnect88.com/register/?pk_kwd=YbzPaMfriy"
+                >
+                  Registrieren
+                </a>
               </Button>
             </DialogActions>
           </Dialog>
@@ -408,8 +432,14 @@ export default function MobileReasons(props) {
               </Typography>
             </DialogContent>
             <DialogActions>
-              <Button autoFocus onClick={handleClose} color="primary">
-                Registrieren
+            <Button autoFocus onClick={handleClose} color="primary">
+                <a
+                  className="mobile_register_button"
+                  target="_blank"
+                  href="https://de.asianconnect88.com/register/?pk_kwd=YbzPaMfriy"
+                >
+                  Registrieren
+                </a>
               </Button>
             </DialogActions>
           </Dialog>

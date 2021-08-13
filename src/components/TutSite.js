@@ -17,7 +17,7 @@ function TutSite(props) {
         </div>
 
         <div className="section_items">
-          <Anleitungen />
+          <Anleitungen contactRef={props.contactRef}/>
         </div>
       </div>
     </div>

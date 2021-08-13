@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 import "@fontsource/dm-sans";
@@ -20,21 +20,28 @@ function NavBar(props) {
   }
 
   function handleStatsClick() {
-    props.statsRef.current.scrollIntoView({block: "end",  behavior: "smooth" });
+    props.statsRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
   }
 
   function handleWhyClick() {
-    props.whyRef.current.scrollIntoView({block: "end", behavior: "smooth" });
+    props.whyRef.current.scrollIntoView({ block: "end", behavior: "smooth" });
   }
 
   function handleTutClick() {
-    props.tutRef.current.scrollIntoView({block: "start", behavior: "smooth" });
+    props.tutRef.current.scrollIntoView({ block: "start", behavior: "smooth" });
+  }
+
+  function handleContactClick() {
+    props.contactRef.current.scrollIntoView({
+      block: "start",
+      behavior: "smooth",
+    });
   }
 
   return (
     <div className="navbar__wrapper">
       <nav className={navbar}>
-        <div onClick={handleHomeClick}>
+        <div onClick={handleHomeClick} className="navbar__logo">
           <Link to="/" className="navbar__logo">
             {/* <img src={logo} alt="Logo" /> */}
             <a className="navbar__name">BetSmart</a>
@@ -61,7 +68,7 @@ function NavBar(props) {
             </li> */}
             <li className="navbar__item" onClick={handleStatsClick}>
               <Link
-                to="/warumBetSmart"
+                to="/"
                 className="navbar__nav-links"
                 onClick={closeMobileMenu}
               >
@@ -70,7 +77,7 @@ function NavBar(props) {
             </li>
             <li className="navbar__item" onClick={handleWhyClick}>
               <Link
-                to="/anleitungen"
+                to="/"
                 className="navbar__nav-links"
                 onClick={closeMobileMenu}
               >
@@ -87,7 +94,7 @@ function NavBar(props) {
               </Link>
             </li>
 
-            <li className="navbar__item" >
+            <li className="navbar__item" onClick={handleContactClick}>
               <Link
                 to="/"
                 className="navbar__nav-links"
@@ -97,16 +104,21 @@ function NavBar(props) {
               </Link>
             </li>
 
-            <li className="navbar__item" >
+            <li className="navbar__item">
               <Link
-                to="/"
+                to={{
+                  pathname:
+                    "https://instagram.com",
+                }}
+                target="_blank"
                 className="navbar__nav-links"
                 onClick={closeMobileMenu}
               >
-                <a className="navbar_item__text"><AiOutlineInstagram size={32}/></a>
+                <a className="navbar_item__text">
+                  <AiOutlineInstagram size={32} />
+                </a>
               </Link>
             </li>
-          
           </ul>
         </div>
       </nav>

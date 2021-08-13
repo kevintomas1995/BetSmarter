@@ -11,6 +11,10 @@
     padding: 2%;
 }
 
+.button {
+    margin-bottom: 3%;
+}
+
 @media screen and (min-width: 740px) {
     .modal_wrapper_Impressum {
         max-width: 50vw;

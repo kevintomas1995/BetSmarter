@@ -14,6 +14,7 @@ function Main() {
   const statsRef = useRef();
   const whyRef = useRef();
   const tutRef = useRef();
+  const contactRef = useRef();
   const [isActiveMarkets, setIsActiveMarkets] = useState(false);
   const [isActiveInfo, setIsActiveInfo] = useState(false);
   const [isActiveImpressum, setIsActiveImpressum] = useState(false);
@@ -62,6 +63,7 @@ function Main() {
         statsRef={statsRef}
         whyRef={whyRef}
         tutRef={tutRef}
+        contactRef={contactRef}
       />
 
       <Home handleWhyClick={handleWhyClick} />
@@ -94,7 +96,7 @@ function Main() {
 
       <WhySite whyRef={whyRef} />
 
-      <TutSite tutRef={tutRef} />
+      <TutSite tutRef={tutRef} contactRef={contactRef} />
 
       <Kontakt />
 

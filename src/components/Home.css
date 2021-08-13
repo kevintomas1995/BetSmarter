@@ -65,6 +65,15 @@
   transition: 0.3s;
 }
 
+.button_link {
+  text-decoration: none;
+  color: white;
+}
+
+.button_link:hover {
+  color: black;
+}
+
 .main__actions > button:hover {
   width: 20%;
   background-color: white;
