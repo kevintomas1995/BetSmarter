@@ -90,13 +90,7 @@ function Anleitungen(props) {
           zusenden. Mit diesen Daten loggst Du dich ganz normal bei Pinnacle
           oder AsianOdds ein. <br></br>
           <br></br>
-          <p ref={props.contactRef}>
-            {" "}
-            Bei Fragen kannst Du Dich jederzeit bei unserem Team melden oder den
-            Support von AsianConnect wenden.
-          </p>
-        </p>
-        <div className="banner">
+          <div className="banner">
           <a
             href="https://de.asianconnect88.com/register/?pk_kwd=YbzPaMfriy"
             data-content-name="YbzPaMfriy"
@@ -110,6 +104,13 @@ function Anleitungen(props) {
             />
           </a>
         </div>
+          <p ref={props.contactRef}>
+            {" "}
+            Bei Fragen kannst Du Dich jederzeit bei unserem Team melden oder den
+            Support von AsianConnect wenden.
+          </p>
+        </p>
+        
       </div>
     </div>
   );

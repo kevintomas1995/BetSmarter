@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./NavBar.css";
 import "@fontsource/dm-sans";
 import { AiOutlineInstagram } from "react-icons/ai";
+import fox from "../images/fox.png"
 
 function NavBar(props) {
   const [clicked, setClicked] = useState(false);
@@ -44,9 +45,10 @@ function NavBar(props) {
         <div onClick={handleHomeClick} className="navbar__logo">
           <Link to="/" className="navbar__logo">
             {/* <img src={logo} alt="Logo" /> */}
-            <a className="navbar__name">BetSmart</a>
+            <a className="navbar__name">WettFux</a>
             {/* <i class="fab fa-btc"></i> */}
           </Link>
+          <img src={fox} style={{width: "10%", height: "10%", marginLeft: "10%"}} />
         </div>
 
         <div>
@@ -81,7 +83,7 @@ function NavBar(props) {
                 className="navbar__nav-links"
                 onClick={closeMobileMenu}
               >
-                <a className="navbar_item__text">Warum BetSmart?</a>
+                <a className="navbar_item__text">Warum WettFux?</a>
               </Link>
             </li>
             <li className="navbar__item" onClick={handleTutClick}>
@@ -108,7 +110,7 @@ function NavBar(props) {
               <Link
                 to={{
                   pathname:
-                    "https://instagram.com",
+                    "https://instagram.com/wettfux/",
                 }}
                 target="_blank"
                 className="navbar__nav-links"

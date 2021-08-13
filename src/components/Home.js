@@ -11,7 +11,7 @@ function Home(props) {
         <div className="main__descritption">
           <div className="main__descritption-text">
             <a className="main__descritption-text__title">
-              WILKOMMEN ZU BETSMART
+              WILKOMMEN ZU WETTFUX
             </a>
           </div>
         </div>
@@ -38,7 +38,7 @@ function Home(props) {
             onClick={props.handleWhyClick}
             ref={props.quotenRef}
           >
-            <a>WARUM BETSMART?</a>
+            <a>WARUM WETTFUX?</a>
           </button>
         </div>
       </FadeIn>

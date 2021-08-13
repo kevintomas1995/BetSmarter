@@ -11,7 +11,7 @@ function WhySite(props) {
             className="section__header__text"
             style={{ color: "white", paddingTop: "1%" }}
           >
-            Warum BetSmart?
+            Warum WettFux?
           </a>
         </div>
 

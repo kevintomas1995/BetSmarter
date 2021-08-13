@@ -7,7 +7,7 @@ function Footer(props) {
   return (
     <div className="container">
       <div className="footer_item" style={{ fontWeight: "bold" }}>
-        BetSmart
+        WettFux
       </div>
       <div className="footer_item" onClick={props.onClickImpressum}>Impressum</div>
       <div className="insta_item">

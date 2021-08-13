@@ -130,7 +130,7 @@ function ReasonItem(props) {
             <br></br> <FcCancel size={30} />
             <br></br>
             <br></br>
-            BetSmart hat jedoch die <b>Lösung</b>!<br></br>
+            WettFux hat jedoch die <b>Lösung</b>!<br></br>
             <br></br> <FcIdea size={30} />
             <br></br>
             <br></br>
